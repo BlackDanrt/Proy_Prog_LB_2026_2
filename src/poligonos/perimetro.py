@@ -1,7 +1,14 @@
 from math import sqrt
-#La función recibe una lista de tuplas, en la cual cada tupla representan las coordenadas (x,y) del respectivo punto
-#Ejemplo: puntos = [(0,0),(0,5),(7,1),(5,-4),(3,-2)]
+
 def calcularPerimetro(puntos):
+    '''
+    La función recibe una lista de tuplas, en la cual cada tupla representan las coordenadas (x,y) del respectivo punto
+    Ejemplo: puntos = [(0,0),(0,5),(7,1),(5,-4),(3,-2)]
+
+    Se calcula la distancia de un punto a un punto b en sentido horario
+
+    Se retorna el perimetro con una precisión de 3 decimales
+    '''
     perimetro = 0
     for i in range(len(puntos)):
         if i != (len(puntos)-1):
