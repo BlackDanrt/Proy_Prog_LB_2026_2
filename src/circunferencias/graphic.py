@@ -34,7 +34,6 @@ def graficar_circunferencia(radio):
     ax.grid(True, alpha=0.3)
     plt.show()
 
-
 def _dibujar_dos_circunferencias(ax, r1, r2, d):
     '''
     Se recibe un eje de matplotlib, los dos radios y la distancia entre centros.

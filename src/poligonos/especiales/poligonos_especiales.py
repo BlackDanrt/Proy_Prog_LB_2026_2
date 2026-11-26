@@ -1,8 +1,6 @@
 from math import sqrt, atan2, degrees
 from validaciones import iguales, validar_poligono, producto_cruz
-from clasificacion_poligonos import clasificar_por_forma
-
-
+from poligonos.clasificacion.clasificacion_poligonos import clasificar_por_forma
 def _longitudes_lados(vertices):
     '''
     Se recibe la lista de vértices de un polígono, en orden.

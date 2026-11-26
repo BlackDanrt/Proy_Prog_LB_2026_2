@@ -21,7 +21,16 @@ def validar_angulo(angulo):
     if angulo <= 0 or angulo >= 180:
         raise ValueError(f"El ángulo debe estar entre 0 y 180 grados (se recibió {angulo}).")
 
+def validar_radios(*radios):
+    '''
+    Se reciben uno o más radios.
 
+    Se lanza ValueError si algún radio es menor o igual a 0.
+    '''
+    for radio in radios:
+        if radio <= 0:
+            raise ValueError(f"Los radios deben ser mayores que 0 (se recibió {radio}).")
+            
 def iguales(x, y):
     '''
     Se reciben dos números.
